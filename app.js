@@ -53,7 +53,7 @@ function getTableData() {
 /**********************************
  Event Listeners 
 **********************************/	
-$("#btnSearch").click(function () {
+btnSearch.click(function () {
 	// Setup: Prevent the page from refreshing on events
 	d3.event.preventDefault();
 	
@@ -111,7 +111,7 @@ btnReset.click(function () {
 function init(){
 	// Step 1: Get the data by retrieving the data from flask 
 	json_url = "/table_data/";
-	getTableData();
+	//getTableData();
     var metadata = d3.select("#table_data");
     metadata.html("");
 }
