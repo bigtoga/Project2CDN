@@ -11,9 +11,10 @@ var loadTableRows = (whichData) => { // Parameter "whichData" is the data to loo
 		
 		// 2.2: Loop through each column and add it as a new table cell
 		tblColumns.forEach(column => tblRow.append("td").text(dataRow[column]))
+	});
 
-		console.log(tableData);
-});
+	console.log(tableData);
+}
 
 function getTableData() {
 	var tableData = [];
