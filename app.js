@@ -65,7 +65,7 @@ btnSearch.on("click", () => {
     var searchedCrime = searchCrime.property("value");
 		
 	if(searchedDate){
-3		// console.log(searchedDate)
+		// console.log(searchedDate)
 		// 2. Filter the data
 		var tableData_Filtered = tableData.filter(tableData => tableData.date === searchedDate);
 	
