@@ -54,8 +54,10 @@ function getTableData() {
  Event Listeners 
 **********************************/
 
-// Search button - click event
-btnSearch.on("click", () => {
+$(document).ready(function(){
+	console.log('document ready')
+	
+	$("#btnSearch").click(function () {
 	// Setup: Prevent the page from refreshing on events
 	d3.event.preventDefault();
 	
