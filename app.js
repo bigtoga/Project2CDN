@@ -52,12 +52,8 @@ function getTableData() {
 
 /**********************************
  Event Listeners 
-**********************************/
-
-$(document).ready(function(){
-	console.log('document ready')
-	
-	$("#btnSearch").click(function () {
+**********************************/	
+$("#btnSearch").click(function () {
 	// Setup: Prevent the page from refreshing on events
 	d3.event.preventDefault();
 	
@@ -103,7 +99,7 @@ $(document).ready(function(){
 })
 
 // Reset button - click 
-btnReset.on("click", () => {
+btnReset.click(function () {
 	// window.location.href = "index.html";
 	document.getElementById("searchDate").value='';
 	document.getElementById("searchCrime").value='';
@@ -111,7 +107,6 @@ btnReset.on("click", () => {
 	// Load original dataset
 	loadTableRows(tableData);
 })
-
 
 function init(){
 	// Step 1: Get the data by retrieving the data from flask 
